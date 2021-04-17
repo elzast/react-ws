@@ -4,3 +4,9 @@
   text-align: center;
   margin: 10px auto;
 }
+.Counter .negative {
+  border-color: red;
+}
+.Counter .negative .Counter__count {
+  color: red;
+}

@@ -1,6 +1,14 @@
 .Switch {
+  display: inline-block;
   border: 2px solid black;
-  width: 200px;
-  text-align: center;
-  margin: 10px auto;
+  padding: 0 12px;
+  margin: 12px;
+}
+
+.Switch--off {
+}
+
+.Switch--on {
+  background-color: palevioletred;
+  color: white;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Counter.css";
 
 function Counter() {
+  // Will always have two variables.  One is the data the other is the set.  The name does not change what it does, but the order does.
   const [count, setCount] = useState(5);
 
   function handleReset() {
@@ -12,11 +13,16 @@ function Counter() {
     setCount((prevCount) => prevCount + 1);
   }
 
+  let classes = "";
+  if (count < 0) {
+    classes += "negative";
+  }
+
   // JSX always comes last
   return (
-    <div className="Counter">
+    <div className={classes}>
       <h3>Counter</h3>
-      <p>{count}</p>
+      <p className="Counter__count">{count}</p>
       <p>
         {/* This is a way to put the function in the JSX directly */}
         <button
@@ -27,9 +33,11 @@ function Counter() {
         >
           Down
         </button>
-        <button type="button" onClick={handleReset}>
-          Reset
-        </button>
+        {count !== 0 && (
+          <button type="button" onClick={handleReset}>
+            Reset
+          </button>
+        )}
         <button type="button" onClick={handleUp}>
           Up
         </button>
