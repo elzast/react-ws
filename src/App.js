@@ -6,6 +6,7 @@ import Weather from "./components/Weather";
 import QuoteList from "./components/QuoteList";
 import Quote from "./components/Quote";
 import ColorPicker from "./components/ColorPicker";
+import CodeEntry from "./components/keypad/CodeEntry";
 
 function App() {
   const weatherData = [
@@ -45,6 +46,9 @@ function App() {
 
       <Votes />
       <ColorPicker />
+      <section>
+        <CodeEntry />
+      </section>
       {weatherData.map((data) => (
         <Weather
           time={data.time}
