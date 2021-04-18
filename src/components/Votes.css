@@ -1,5 +1,6 @@
 .Votes {
-  width: 50%;
+  width: 30vw;
+  height: 20vh;
   border: 3px solid teal;
   padding: 2px;
   margin: 2px auto;
