@@ -61,9 +61,11 @@ function App() {
        <Weather time="tuesday" conditions="Thunderstorms" tempF={55} /> */}
 
       <QuoteList />
+      <h3>Another way to show Quotes</h3>
       {quoteData.map((data) => (
         <Quote author={data.author} text={data.text} date={data.date} />
       ))}
+      <h3>My quotes</h3>
       <Quote
         author="Gucci Mane"
         text="If a man does not have sauce, then he is lost. But the same man can get lost in the sauce."
