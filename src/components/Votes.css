@@ -19,16 +19,16 @@
 }
 
 .Votes__bar {
-  height: 4px;
+  height: 8px;
   margin-bottom: 10px;
 }
 
 .Votes__bar--chocolate {
-  background-color: Sienna;
+  background-color: brown;
 }
 .Votes__bar--vanilla {
-  background-color: Silver;
+  background-color: bisque;
 }
 .Votes__bar--strawberry {
-  background-color: LightCoral;
+  background-color: lightpink;
 }
