@@ -1,6 +1,7 @@
 .Switch {
   display: inline-block;
   border: 2px solid black;
+  width: 200px;
   padding: 0 12px;
   margin: 12px;
 }
