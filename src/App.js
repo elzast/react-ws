@@ -6,6 +6,7 @@ import Weather from "./components/Weather";
 import QuoteList from "./components/QuoteList";
 import Quote from "./components/Quote";
 import ColorPicker from "./components/ColorPicker";
+
 function App() {
   const weatherData = [
     { time: "today", highF: 60, lowF: 50, conditions: "Mostly Cloudy" },

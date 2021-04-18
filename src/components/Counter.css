@@ -4,6 +4,7 @@
   text-align: center;
   margin: 10px auto;
 }
+
 .Counter.negative {
   border-color: red;
 }
